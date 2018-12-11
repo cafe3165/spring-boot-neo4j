@@ -29,5 +29,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-neo4j</artifactId>
 		</dependency>
+		
+		<!-- spring boot devtools 依赖包. -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+           <scope>true</scope>
+		</dependency>
 	</dependencies>
 </project>

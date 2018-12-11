@@ -27,6 +27,8 @@ public class CoderController {
 	}
 	
 	@PostMapping("/save")
+//	@RequestMapping("/save")
+
 	@Transactional
 	public ResponseResult Create(@RequestBody Coder coder) throws Exception{
 	   
@@ -36,5 +38,17 @@ public class CoderController {
 	    }
 	    return new ResponseResult(500,coder.getName()+"节点创建失败！");
 	}
+	
+	@RequestMapping("/hello") //restful风格的api接口
+		
+		public String index() { 
+	        return "Hello neo4j";
+	    }
+		
+	
+
 		
 }
+
+
+
